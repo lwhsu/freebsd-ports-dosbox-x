@@ -1,0 +1,16 @@
+bin/dosbox-x
+man/man1/dosbox-x.1.gz
+share/applications/com.dosbox_x.DOSBox-X.desktop
+%%DATADIR%%/CHANGELOG
+%%DATADIR%%/FREECG98.BMP
+%%DATADIR%%/dosbox-x.reference.conf
+%%DATADIR%%/dosbox-x.reference.full.conf
+%%DATADIR%%/translations/en_US.lng
+%%DATADIR%%/translations/es_ES.lng
+%%DATADIR%%/translations/fr_FR.lng
+%%DATADIR%%/translations/ja_JP.lng
+%%DATADIR%%/translations/tr_TR.lng
+%%DATADIR%%/translations/zh_CN.lng
+%%DATADIR%%/translations/zh_TW.lng
+share/icons/hicolor/scalable/apps/dosbox-x.svg
+share/metainfo/com.dosbox_x.DOSBox-X.metainfo.xml
