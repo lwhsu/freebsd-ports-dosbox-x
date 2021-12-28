@@ -11,7 +11,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-
 USES=	autoreconf sdl
 
 USE_GITHUB=	yes
@@ -20,7 +19,6 @@ GH_TAGNAME=	${PORTNAME}-${DISTVERSIONFULL}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${WRKDIR}/dist
-# --enable-sdl2 
-USE_SDL= sdl net sound
+USE_SDL=	sdl net sound
 
 .include <bsd.port.mk>
