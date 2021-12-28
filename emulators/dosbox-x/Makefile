@@ -9,6 +9,9 @@ COMMENT=	Cross-platform DOS emulator based on the DOSBox project
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+LIB_DEPENDS=	libpng.so:graphics/png
+
+
 USES=	autoreconf sdl
 
 USE_GITHUB=	yes
@@ -16,7 +19,8 @@ GH_ACCOUNT=	joncampbell123
 GH_TAGNAME=	${PORTNAME}-${DISTVERSIONFULL}
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-sdl2 --prefix=${WRKDIR}/dist
-USE_SDL=	sdl2
+CONFIGURE_ARGS=	--prefix=${WRKDIR}/dist
+# --enable-sdl2 
+USE_SDL= sdl net sound
 
 .include <bsd.port.mk>
