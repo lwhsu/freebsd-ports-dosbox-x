@@ -6,8 +6,6 @@ PORTSDIR=/usr/ports
 
 set -ex
 
-pwd
-
 cd /usr
 mv ports ports.old
 git clone --depth=1 --single-branch -b main https://github.com/freebsd/freebsd-ports.git ports
@@ -24,8 +22,6 @@ do
 done
 
 mkdir /usr/ports/distfiles
-
-df -h
 
 echo "NO_ZFS=yes" >> /usr/local/etc/poudriere.conf
 echo "ALLOW_MAKE_JOBS=yes" >> /usr/local/etc/poudriere.conf
